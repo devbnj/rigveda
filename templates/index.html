@@ -1,0 +1,48 @@
+<!-- templates/index.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="w3-row-padding w3-center w3-margin-top">
+  <h2>Rapid Course on Rig Veda</h2>
+  <p>Rig Veda is an ancient scripture in Sanskrit. These unwritten documents, communicated verbally for thousands of years contains the creative wisdom of 10 clans, each claiming their rights on a book. Rig Veda comprises 10 books ('mandala-s'). Clan and family members contributed to a single book. Around the same time, Sama and Yajur Veda adopted thousands of verses from Rig Veda. Sama added music and rhythm to the metrical verses. Founded on principles expressed as verses and poetry, Indic and neighboring civilizations thrived thousands of years back. With the advent of time, lost were the Rig Veda's importance to Vedanta and Upanishad texts. But Rig Veda occupied a special place in every philosophy that followed.</p>
+  <p>Rig Veda is ‘apaurashik’; it is not of human origin. Some of the original clan members heard the ‘riks’, celestial sounds which they interpreted into human mantras. Several mantras formed a ‘sukta’. The ‘sukta’ and its underlying mantras had a single author. A book was a compilation of many sukta texts from several authors of the same clan over many generations. A person who heard the ‘rik’ and spoke its interpreted mantra became a ‘rishi’. The rishi-s passed their valuable knowledge as an inheritable object to other clan members, faithfully reproduced till date over thousands of generations.</p>
+  <p>Sayan circa ~ 1300 CE of Vijaynagar (a large region in southern India encompassing Bangalore) completed the first written version in the Devanagari script along with his comments. His commentary on the Rigveda translated from Sanskrit to English by Max Müller, 1823-1900 became published then. Sayan's remained biased to his Mimansa teachings, though a majority of his peers contributed to his writings. The Sanskrit in Rigveda is unlike its current form. The language and syntactical layers are one of the oldest extant texts, that generated other Indo-European scripts.</p>
+  <div class="w3-third">
+    <div class="w3-card w3-container" style="min-height:460px">
+    <h3>Rig Veda</h3><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Vedas.svg" class="w3-text-blue w3-image" style="width: 150px;" />
+    <p>Orally communicated</p>
+    <p>Ancient scriptures</p>
+    <p>Beyond religious beliefs</p>
+    <p>Scientific</p>
+    </div>
+  </div>
+  
+  <div class="w3-third">
+    <div class="w3-card w3-container" style="min-height:460px">
+    <h3>Duration</h3><br>
+    <i class="fa fa-calendar w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+    <p>4-8 weeks</p>
+    <p>1.5 hours/week instructor based</p>
+    <p>3-4.5 hours/week self study</p>
+    <p><a href="{{ url_for('auth.login') }}">Login</a>&nbsp;<a href="{{ url_for('auth.signup') }}">Register</a></p>
+    </div>
+  </div>
+  
+  <div class="w3-third">
+    <div class="w3-card w3-container" style="min-height:460px">
+    <h3>Further</h3><br>
+    <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+    <p>Get <a href="https://www.vedah.com/" target="_blank">certified by SAKSHI</a></p>
+    <p>Other Vedas</p>
+    <p>Vedantic thought</p>
+    <p>Learn Sanskrit</p>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <h3 class="w3-center">RigVeda course runs on AWS, Docker, Python, Python-Flask, NGINX, MongoDB and SQLite3</h3>
+  <h4 class="w3-center">Templates use Jinja2 on Web Responsive pages from W3schools</h4>
+  <h4 class="w3-center">Copyrights and TradeMarks of respective companies acknowledged</h4>
+</div>
+{% endblock %}

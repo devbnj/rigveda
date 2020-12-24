@@ -1,0 +1,20 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div cass="w3-container w3-row">
+<h1 class="w3-center">Rig Veda Class Material</h1>
+<p class="w3-left">{{ name }}</p>
+<p class="w3-right">Page: {{ page }}</p>
+</div>
+
+<br />
+
+<div class="w3-container w3-card-2 w3-row">
+{% for post in posts %}
+<p><strong>{{ post.tip }}</strong>: {{ post.body }}</p>
+{% endfor %}
+</div>
+
+{% endblock %}
